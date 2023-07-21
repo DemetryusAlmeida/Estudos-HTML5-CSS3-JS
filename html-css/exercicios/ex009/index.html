@@ -4,32 +4,81 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Outras formatações</title>
+  <title>Listas</title>
 </head>
 <body>
-  <h1>Outras formatações/Pré formatação</h1>
-  <h2>Código-fonte</h2>
-  <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
-  <pre>
-    <code>
-  num = int(input('Digite um número inteiro'))
-  if num % 2 == 0
-    print('O número {} é par.'.format(num))
-  else:
-    print('O número {} é ímpar.'.format(num))
-  print('Fim do programa')
-    </code>
-  </pre>
-  <h2>Citações simples.</h2>
-  <p>Como diria um pai de um amigo: <q>O computador é um burro muito rápido.</q></p>
-  <h2>Citações completas</h2>
-  <p>Segundo Siamark Sarmady, no seu livro HTML web design in 7 days!:</p>
-  <blockquote cite="https://www.google.ca/books/edition/HTML_Web_Design_in_7_Days/YwEQoMAJjj8C?hl=pt-BR&gbpv=1&dq=html&pg=PT3&printsec=frontcover">
-    Web pages are ordinary files with "htm" or ".html" files extensions.
-  </blockquote>
-  <h2>Abreviações</h2>
-  <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascating Style Sheets">CSS</abbr>.</p>
-  <h2>Texto invertido</h2>
-  <p><bdo dir="rtl">Estou aprendendo a criar coias em HTML.</bdo></p>
+  <h1>Trabalhando com listas</h1>
+
+  <h2>Listas ordenadas (OL)</h2>
+  <ol type="i" start="5"> <!--1, A, a, I, i-->
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+
+  <h2>Listas não ordenadas (UL)</h2>
+  </ol>
+  <ul type="square"> <!--disc, circle, square-->
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+  </ul>
+
+  <h2>Minhas Linguagens favoritas</h2>
+  <ol>
+    <li>Antigas</li>
+    <ol type="a">
+      <li>Clipper</li>
+      <li>Visual Basic</li>
+      <li>Fortran</li>
+      <li>Delphi</li>
+    </ol>
+
+    <li>Novas</li>
+    <ol type="a" start="5">
+      <li>PHP</li>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Kotlin</li>
+    </ol>
+  </ol>
+
+  <h2>Meus Jogos Favoritos</h2>
+  <ol>
+    <li>NES</li>
+    <ul type="square">
+      <li>Mario Bros</li>
+      <ul type="circle">
+        <li>Mario Bros 3</li>
+        <li>Mario: Lost Levels</li>
+      </ul>
+      <li>Ninja Gaiden</li>
+    </ul>
+
+    <li>SNES</li>
+    <ul type="square">
+      <li>Mario</li>
+      <li>Donkey Kong</li>
+    </ul>
+
+    <li>Playstation</li>
+    <ul type="square">
+      <li>Final Fantasy</li>
+      <li>Castlevania</li>
+    </ul>
+  </ol>
+
+  <h2>Lista de definições</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação utilizada para criar o conteúdo dos sites.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a especificação de estilos em sites.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para criar interatividades em sites.</dd>
+  </dl>
 </body>
 </html>
